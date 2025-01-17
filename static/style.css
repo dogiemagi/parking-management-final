@@ -1,0 +1,138 @@
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: url('../static/images/backgoundimg3.jpg') no-repeat center center fixed; /* Add background image */
+        background-size: cover; /* Ensure the image covers the viewport */
+    } /* Gradient background */
+    .container {
+        text-align: center;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+    .box {
+        background: #e6f7ff; /* Light blue background for the "Select Vehicle Type" box */
+        padding: 15px;
+        border: 1px solid #91d5ff; /* Border color matching the box's tone */
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .checkout-box {
+        background: #f6ffed; /* Light green background for the "To Checkout" box */
+        padding: 15px;
+        border: 1px solid #b7eb8f; /* Border color matching the box's tone */
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+.success-page {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.success-message {
+    color: white; /* Green color for success message */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.success-text {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.details {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.btn {
+    background-color: rgba(0, 128, 0, 0.8); /* Semi-transparent green button */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(0, 128, 0, 1); /* Fully opaque on hover */
+}
+
+.form-group {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: auto; /* Make the dropdown fit the label size */
+}
+
+button {
+    background-color: rgba(0, 128, 0, 0.8); /* Semi-transparent green */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 128, 0, 1); /* Fully opaque on hover */
+}
+
+.alert {
+    backdrop-filter: blur(10px); /* Blur effect for alert */
+    background-color: rgba(255, 239, 196, 0.8); /* Semi-transparent yellow */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 224, 138, 0.8); /* Subtle border */
+    border-radius: 5px;
+}
+
+.checkout-box h2, .box h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.checkout-box button {
+    padding: 8px 12px;
+    font-size: 14px;
+}

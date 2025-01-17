@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="container">
+    <h1>Welcome to Vehicle Parking System</h1>
+
+    {% if message %}
+        <div class="alert alert-warning">
+            <strong>{{ message }}</strong>
+        </div>
+    {% endif %}
+
+    <!-- Box for selecting vehicle type -->
+    <div class="box">
+        <h2>Select Vehicle Type</h2>
+        <form method="POST" action="{{ url_for('show_slots') }}">
+            <div class="form-group">
+                <label for="vehicle_type">Vehicle Type:</label>
+                <select id="vehicle_type" name="vehicle_type">
+                    <option value="Car">Car</option>
+                    <option value="Bike">Bike</option>
+                </select> 
+            </div>
+            <!-- Move the button to the next line -->
+            <div class="form-group">
+                <button type="submit">Check Available Slots</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Separate box for checkout -->
+    <div class="box">
+        <h2>To Checkout</h2>
+        <form action="{{ url_for('checkout') }}" method="get">
+            <button type="submit">Checkout Details</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
